@@ -1,0 +1,17 @@
+assetic:
+    assets:
+        jquery:
+            inputs:
+                - '@IntegraBundle/Resources/public/js/jquery.js'
+        jquery_scroll_to:
+            inputs:
+                - '@IntegraBundle/Resources/public/js/jquery.scroll-to.js'
+    filters:
+        scssphp:
+            formatter: 'Leafo\ScssPhp\Formatter\Compressed'
+        jsqueeze: ~
+        yui_css:
+            jar: '%kernel.root_dir%/Resources/java/yuicompressor.jar'
+        yui_js:
+            jar: '%kernel.root_dir%/Resources/java/yuicompressor.jar'
+

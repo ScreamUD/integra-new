@@ -1,0 +1,1 @@
+(function(){$(document).ready(function(){$buttons=$(".scroll-to");$buttons.on("click",function(b){b.preventDefault();$.scrollTo($(this).attr("data-target"),1000)});a()});$(window).resize(function(){a()});function a(){var c=$(".header");var d=$(".block10");var b=$(window).height();c.css("height",b+"px");d.css("height",b+"px");console.log(b)}})();

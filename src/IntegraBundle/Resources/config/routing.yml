@@ -1,0 +1,11 @@
+integra:
+    path:      /
+    defaults:  { _controller: IntegraBundle:Index:index }
+
+di_one_plus:
+    path:      /di_1plus
+    defaults:  { _controller: IntegraBundle:DiOnePlus:index }
+
+di_two_free:
+    path:      /di_2
+    defaults:  { _controller: IntegraBundle:DiTwoFree:index }

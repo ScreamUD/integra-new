@@ -1,0 +1,2 @@
+integra:
+    resource: "@IntegraBundle/Resources/config/routing.yml"

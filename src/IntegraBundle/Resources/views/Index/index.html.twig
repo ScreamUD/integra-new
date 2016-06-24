@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        {% stylesheets filter='yui_css,scssphp' output='css/minify.css'
+        '@IntegraBundle/Resources/asserts/Index/css/media.css'
+        '@IntegraBundle/Resources/asserts/Index/css/styles.css' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+    {% endblock %}
+    {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
+</head>
+<body>
+
+{{ include('IntegraBundle:Index/blocks:header_menu.html.twig') }}
+
+{% block body %}
+
+    {{ include('IntegraBundle:Index/blocks:header.html.twig') }}
+
+{% endblock %}
+
+{{ include('IntegraBundle:Index/blocks:footer.html.twig') }}
+
+{% block javascripts %}
+    {% javascripts filter='yui_js,?jsqueeze' output='js/minify.js'
+    '@jquery'
+    '@jquery_scroll_to'
+    '@IntegraBundle/Resources/asserts/Index/js/index.js' %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{#{{ include('IntegraBundle:Index/seo:seo.html.twig') }}#}
+</body>
+</html>
