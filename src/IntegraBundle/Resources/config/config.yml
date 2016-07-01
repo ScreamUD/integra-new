@@ -1,11 +1,11 @@
 assetic:
-    assets:
-        jquery:
-            inputs:
-                - '@IntegraBundle/Resources/public/js/jquery.js'
-        jquery_scroll_to:
-            inputs:
-                - '@IntegraBundle/Resources/public/js/jquery.scroll-to.js'
+#    assets:
+#        jquery:
+#            inputs:
+#                - '@IntegraBundle/Resources/public/js/jquery.js'
+#        jquery_scroll_to:
+#            inputs:
+#                - '@IntegraBundle/Resources/public/js/jquery.scroll-to.js'
     filters:
         scssphp:
             formatter: 'Leafo\ScssPhp\Formatter\Compressed'

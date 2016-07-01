@@ -1,0 +1,84 @@
+@media screen and (max-height: 768px) {
+  /* line 14, media.less */
+  div.header section.one .wrapper {
+    padding-top: 0;
+  }
+  /* line 16, media.less */
+  div.header section.one .wrapper img.logo {
+    padding: 30px 0;
+  }
+  /* line 19, media.less */
+  div.header section.one .wrapper h2 {
+    margin-bottom: 75px;
+  }
+  /* line 25, media.less */
+  div.header section.one .wrapper a.scroll-to img.arrow {
+    margin-top: 135px;
+    margin-bottom: 30px;
+  }
+  /* line 33, media.less */
+  div.header section.two .wrapper {
+    padding-top: 0;
+  }
+  /* line 35, media.less */
+  div.header section.two .wrapper p {
+    padding: 20px 203px;
+  }
+  /* line 38, media.less */
+  div.header section.two .wrapper h4 {
+    padding: 20px 203px;
+  }
+  /* line 70, media.less */
+  div.block3 .accordion_1 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 184, media.less */
+  div.block3 .accordion_2 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 263, media.less */
+  div.block3 .accordion_3 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 342, media.less */
+  div.block3 .accordion_4 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 421, media.less */
+  div.block3 .accordion_5 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 476, media.less */
+  div.block3 .accordion_5 .frame .content .timetable table tbody tr:first-child td {
+    border: none;
+  }
+  /* line 502, media.less */
+  div.block3 .accordion_6 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 581, media.less */
+  div.block3 .accordion_7 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 660, media.less */
+  div.block3 .accordion_8 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 739, media.less */
+  div.block3 .accordion_9 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 818, media.less */
+  div.block3 .accordion_10 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 897, media.less */
+  div.block3 .accordion_11 .frame .content p {
+    padding: 10px 140px;
+  }
+  /* line 976, media.less */
+  div.block3 .accordion_12 .frame .content p {
+    padding: 10px 140px;
+  }
+}
+/*# sourceMappingURL=media.css.map */

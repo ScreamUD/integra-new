@@ -2,23 +2,42 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}Духовная Интеграционика{% endblock %}</title>
     {% block stylesheets %}
-        {% stylesheets filter='yui_css,scssphp' output='css/minify.css'
-        '@IntegraBundle/Resources/asserts/Index/css/media.css'
-        '@IntegraBundle/Resources/asserts/Index/css/styles.css' %}
+        {% stylesheets filter='cssrewrite,?yui_css' output='css/minify.css'
+        'bundles/integra/assets/Index/css/media.css'
+        'bundles/integra/assets/Index/css/styles.css'
+        'bundles/integra/css/font-awesome.min.css' %}
             <link rel="stylesheet" href="{{ asset_url }}" />
         {% endstylesheets %}
     {% endblock %}
     {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
 </head>
+
 <body>
 
-{{ include('IntegraBundle:Index/blocks:header_menu.html.twig') }}
+{{ include('IntegraBundle:Index/blocks:header-menu.html.twig') }}
 
 {% block body %}
 
     {{ include('IntegraBundle:Index/blocks:header.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-one.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-two.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-three.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-four.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-five.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-six.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-seven.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-eight.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-nine.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-ten.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-eleven.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-twelve.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-thirteen.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-eight.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-seventeen.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-nineteen.html.twig') }}
+    {{ include('IntegraBundle:Index/blocks:block-sixteen.html.twig') }}
 
 {% endblock %}
 
@@ -26,9 +45,9 @@
 
 {% block javascripts %}
     {% javascripts filter='yui_js,?jsqueeze' output='js/minify.js'
-    '@jquery'
-    '@jquery_scroll_to'
-    '@IntegraBundle/Resources/asserts/Index/js/index.js' %}
+    '@IntegraBundle/Resources/public/js/jquery.js'
+    '@IntegraBundle/Resources/public/js/jquery.scroll-to.js'
+    '@IntegraBundle/Resources/public/assets/Index/js/index.js' %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
 {% endblock %}
